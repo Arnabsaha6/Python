@@ -11,3 +11,13 @@ words = ['grapes','mango','laptop','television','toy','software','music','dance'
 ,'mask','corona','movies','deaf','orange','personal','chair','canada','switzerland','distance','highway','india','new zealand','tokyo','money']
 
 #FUNCTION
+def labelSlider():
+	global count,sliderwords
+	text = 'WELCOME TO TYPING SPEED INCREASER GAME'
+	if(count >= len(text)):
+		count = 0
+		sliderwords=''
+	sliderwords += text[count]
+	count += 1
+	fontLabel.configure(text = sliderwords)
+	fontLabel.after(150,labelSlider)
