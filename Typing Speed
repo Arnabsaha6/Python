@@ -82,3 +82,12 @@ labelSlider()
 random.shuffle(words)
 wordLabel = Label(root,text=words[0],font=('airal',40,'italic bold'),bg='yellow')
 wordLabel.place(x=350,y=200)
+
+scoreLabel = Label(root,text='Your Score :',font=('airal',25,'italic bold'),bg='yellow',fg='black')
+scoreLabel.place(x=10,y=100)
+
+scoreLabelCount = Label(root,text=score,font=('airal',25,'italic bold'),bg='yellow',fg='black')
+scoreLabelCount.place(x=80,y=180)
+
+timerLabel = Label(root,text='Time Left',font=('airal',25,'italic bold'),bg='yellow',fg='black')
+timerLabel.place(x=600,y=100)
