@@ -73,3 +73,8 @@ timeleft = 60
 count = 0
 sliderwords = ' '
 miss = 0
+
+#LABEL METHODS
+fontLabel = Label(root,text=' ', font=('airal',20,'italic bold'),bg='black',fg='white',width = 45)
+fontLabel.place(x=20,y=20)
+labelSlider()
