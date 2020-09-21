@@ -21,3 +21,19 @@ def labelSlider():
 	count += 1
 	fontLabel.configure(text = sliderwords)
 	fontLabel.after(150,labelSlider)
+
+def startGame(event):
+    global score,miss
+    if(timeleft==60):
+      timer()
+    gamePlayDetails.configure(text='')
+    if(wordEntry.get()==wordLabel['text']):
+        score+=1
+        scoreLabelCount.configure(text=score)
+        print('score:',score)
+    else:
+        miss+=1
+        print('miss:',miss)
+    random.shuffle(words)
+    wordLabel.configure(text=words[0])
+    wordEntry.delete(0,END)
