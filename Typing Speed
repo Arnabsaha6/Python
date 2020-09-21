@@ -78,3 +78,7 @@ miss = 0
 fontLabel = Label(root,text=' ', font=('airal',20,'italic bold'),bg='black',fg='white',width = 45)
 fontLabel.place(x=20,y=20)
 labelSlider()
+
+random.shuffle(words)
+wordLabel = Label(root,text=words[0],font=('airal',40,'italic bold'),bg='yellow')
+wordLabel.place(x=350,y=200)
