@@ -97,3 +97,11 @@ timeLabelCount.place(x=680,y=180)
 
 gamePlayDetails = Label(root,text = 'Type word and hit Enter Button',font=('airal',30,'italic bold'),bg='yellow',fg='black')
 gamePlayDetails.place(x=120,y=450)
+
+#ENTRY METHOD
+wordEntry = Entry(root, font=('airal',25,'italic bold'),bd=10,justify='center')
+wordEntry.place(x=250,y=300)
+wordEntry.focus_set()
+
+root.bind('<Return>',startGame)
+root.mainloop()
