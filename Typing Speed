@@ -61,3 +61,8 @@ def timer():
             scoreLabelCount.configure(text=score)
 
 #ROOT METHOD
+
+root = Tk()
+root.geometry('800x600+400+100')
+root.configure(bg='yellow')
+root.title('TYPING SPEED INCREASER GAME')
