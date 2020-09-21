@@ -37,3 +37,25 @@ def startGame(event):
     random.shuffle(words)
     wordLabel.configure(text=words[0])
     wordEntry.delete(0,END)
+    
+def timer():
+    global timeleft,score,miss
+    if(timeleft>=11):
+        pass
+    else:
+        timeLabelCount.configure(fg='red')
+
+    if(timeleft>=0):
+        timeleft-=1
+        timeLabelCount.configure(text=timeleft)
+        timeLabelCount.after(1000,timer)
+    else:
+        gamePlayDetails.configure(text='Hit={} | Miss={} | Total Score={}'.format(score,miss,score-miss))
+        rr = messagebox.askretrycancel('Notificatioin','For play again Hit Retry button')
+        if(rr == True):
+            score = 0
+            timeleft = 60
+            miss = 0
+            timeLabelCount.configure(text=timeleft)
+            wordLabel.configure(text=words[0])
+            scoreLabelCount.configure(text=score)
