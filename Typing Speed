@@ -91,3 +91,9 @@ scoreLabelCount.place(x=80,y=180)
 
 timerLabel = Label(root,text='Time Left',font=('airal',25,'italic bold'),bg='yellow',fg='black')
 timerLabel.place(x=600,y=100)
+
+timeLabelCount = Label(root,text=timeleft,font=('airal',25,'italic bold'),bg='yellow',fg='black')
+timeLabelCount.place(x=680,y=180)
+
+gamePlayDetails = Label(root,text = 'Type word and hit Enter Button',font=('airal',30,'italic bold'),bg='yellow',fg='black')
+gamePlayDetails.place(x=120,y=450)
