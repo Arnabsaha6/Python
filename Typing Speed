@@ -1,3 +1,11 @@
 from tkinter import *
 import random
 from tkinter import messagebox
+
+#WORDS FOR GAME
+
+words = ['grapes','mango','laptop','television','toy','software','music','dance','helicopter','life','snake','jelly','hardware','live','drawing'
+,'silly','stupid','jungle','college','team','dream','school','daily','household','technology','computer','art','doodle','happen','eyes'
+,'skin','child','toffee','hustle','bustle','dreaming','hospital','hostel','entertainment','python','cobra','lion','successful','danger'
+,'endangered','swift','leaf','edge','dog','snow','cartoon','swiggy','swirl','black','grey','pink','night','dusting','sleep','table','sanitizer'
+,'mask','corona','movies','deaf','orange','personal','chair','canada','switzerland','distance','highway','india','new zealand','tokyo','money']
